@@ -1,0 +1,158 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>i did a thing</title>
+	<link href="pcb.css" rel="stylesheet">
+    <!--style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+},
+.why {
+	max-height: 720px;
+}
+
+        </style>
+  </head>-->
+  <body style="background-color: #180C26; color: #B66781">
+    <h1 id="pcb-etching">PCB etching</h1>
+    <p>&lt;</p>
+    <h2 id="i-etched-some-copper-today-and-it-was-neat-so-im-gonna-try-to-write-it-up-i-guess">I etched some copper today and it was neat so I'm gonna try to write it up I guess</h2>
+    <h4 id="things-i-used">things I used:</h4>
+    <ul>
+      <li>
+        <a href="https://smile.amazon.com/gp/product/B01MCVLDDZ/">blank copper pcbs</a>
+      </li>
+      <li>
+        <a href="https://smile.amazon.com/gp/product/B008O9XMYA/">ferric chloride</a> (more on this near the end)</li>
+      <li>nitrile gloves</li>
+      <li>two (2) paint roller tray liners:
+I bought mine because they're made of PET, which is a very chemically inert plastic <br><img class="why" src="./IMG_20190814_155038.jpg" alt="liner" /></li>
+      <li>several normal-type sharpies, a metallic sharpie, an oil-based paint sharpie, cheap nail polish, and three kinds of tape</li>
+      <li>a disposable plastic container large enough for the PCBs to sit flat on the bottom</li>
+      <li>a glass container with a good nonmetallic cap/lid, with a funnel if necessary</li>
+      <li>about 400mL of isopropyl alcohol and 200mL of acetone</li>
+      <li>tap water</li>
+      <li>my gravel driveway (the most well-ventilated of areas)</li>
+    </ul>
+    <h2 id="step-0">STEP 0:</h2>
+    <p>Clean a copper board. Lightly sand it to rough up the surface. (not sure if this is necessary) Clean it again. (this is necessary)<br />
+Draw circuit on board. Try not to touch the bare copper with your greasy fingers. I clipped my boards to a piece of glass and used that to manipulate them. How I designed my circuit is beyond the scope of this, but for the record I tried <a href="https://smile.amazon.com/gp/product/B07BS5T1FC/">manually drilling a hole in my test board with this stupid fucking thing, and it took a half hour before I gave up when I was about 80% through.</a><br />
+So my circuit is a sort of hybrid <a href="https://web.archive.org/web/20080228142511/http://www.cliftonlaboratories.com/Prototyping.htm#Island_Pad_Prototyping">Manhattan/Island style layout</a>.<br />
+Basically just a bunch of solder pads in a usable layout for my components, which I plan to connect with hookup wires. The 5v rail is the only modern-conventional "trace"<br /><img class="why" src="./P1_pre.jpg" alt="board 1, drawn" /><br />
+More in the next step, but I had little idea what would work, so I also prepared another board differently. Board 1 (above) is purely drawn with sharpies. On this one, which I think of as "board 0", the ground plane is painted on with nail polish and "neatened up" with sharpie. I thought this might be easier. I was mistaken. <br><img class="why" src="./P0_pre.jpg" alt="board 0" /></p>
+    <h2 id="step-0.1">STEP 0.1:</h2>
+    <p>I've never done this before and my research online has turned up conflicting information (wow weird), so the first board I etched would actually be a test article:<br /><img class="why" src="./PT_pre.jpg" alt="tester" /><br>
+On this test board I included a line for every reasonable masking method at my disposal:</p>
+    <h4 id="inks-from-top-to-bottom">inks, from top to bottom:</h4>
+    <ul>
+      <li>black chisel-tip sharpie</li>
+      <li>silver metallic sharpie</li>
+      <li>white oil-based paint sharpie</li>
+      <li>$2 store-brand nail polish, cyan</li>
+    </ul>
+    <h4 id="tapes-left-to-right">tapes, left to right:</h4>
+    <ul>
+      <li>chinese kapton tape</li>
+      <li>matte name-brand Scotch tape (the good shit)</li>
+      <li>some yellow paper masking tape that came with a very cheap chinese 3d printer kit</li>
+    </ul>
+    <p>All labels were written with black ultra-fine sharpie. I also dragged my fingertip across my face and planted a nice greasy fingerprint slightly to the right of the nail polish line.</p>
+    <h2 id="step-1-setup">STEP 1: SETUP</h2>
+    <p>I didn't remember to take very many pictures of my setup/process. Here's a word picture:</p>
+    <ul>
+      <li>In one paint tray, I poured enough water to fill both "pockets".</li>
+    </ul>
+    <blockquote>
+      <blockquote>
+        <p>
+          <em>Originally I used lukewarm garden hose water, but ferric chloride etches faster when it's warm (I think ~45C is ideal?) so midway through the process I swapped out the hose water for "hot" tap water from the kitchen sink.</em>
+        </p>
+      </blockquote>
+    </blockquote>
+    <ul>
+      <li>I floated the second paint tray inside this first one.</li>
+      <li>off to the side somewhere, I filled the rinse container with an inch or so of hose water</li>
+      <li>put gloves on</li>
+    </ul>
+    <h2 id="step-2-start-doing-the-thing">STEP 2: START DOING THE THING</h2>
+    <p>I dropped the test board into the top tray and poured enough etchant to cover it.
+<br><img class="why" src="./IMG_20190814_131935.jpg" alt="what that looks like" /><br>
+The liquid should be steadily agitated I guess. Because of my tray sandwich setup, the top container was easy to rock like a boat. Here's me checking my status after 10-15 minutes
+<br><img class="why" src="./IMG_20190814_131943.jpg" alt="all times given are very fuzzy estimates" /><br />
+The etchant starts at edges and works its way inwards. My test board took an estimated 25 minutes. After I switched the water bath to hot water and moved my whole setup out of the shade, I etched both "real" boards at once and it took about 30 minutes.<br />
+It was about 80F here today, partly cloudy, with absolutely no breeze.</p>
+    <h2 id="step-3-i-did-the-thing">STEP 3: I DID THE THING</h2>
+    <p>I don't have any photos of the immediate aftermath or the cleanup. My gloves were covered with ferric chloride and I didn't wanna touch my new phone. (all photos were taken with a google pixel 3a and I am very impressed. I rotated/cropped some stuff on my desktop but otherwise nothing is altered)<br />
+in basic form, my cleanup process was:</p>
+    <ul>
+      <li>pour used ferric chloride solution into glass container, cap it. Here is what I ended up with. this liquid is <strong>opaque</strong>. that's a 900lm flashlight <br><img class="why" src="./IMG_20190814_155201.jpg" alt="pineapple captain morgan is not great" /><br>
+I figure I can reuse this liquid next time around.</li>
+      <li>once boards are rinsed, dump rinsewater from that container onto, uh, the pile of scrap metal in my backyard. Listen, it's an authorized recycling center. I promise.</li>
+      <li>rinse etching container with water from lower container. Transfer this rinsewater into the now-empty dunk bowl, dilute it with hose water until the container is full, dump this on the scrap metal pile too. Stop judging me.</li>
+      <li>at this point, every container was mostly rinsed. I rinsed them all one more time with clean water from the garden hose.</li>
+      <li>my car recently drained an entire transmission's worth of fluid into my driveway. Trace amounts of copper-contaminated ferric chloride is the least of nature's concerns.</li>
+      <li>the solution to pollution is dilution. this isn't strictly true but I sure enjoy saying it</li>
+    </ul>
+    <h2 id="results">RESULTS</h2>
+    <p>
+      <img class="why" src="./PT_P0_P1_final.jpg" alt="all three" />
+      <br />
+Let's go board-by-board here, starting with...</p>
+    <h3 id="the-test-board">the test board:</h3>
+    <p>
+      <img class="why" src="./PT_etch.jpg" alt="pre-cleaning" />
+      <br />
+Here it is, right after rinsing. You'll notice the black and silver sharpie lines look... weird. While rinsing this one, I kinda tried to rub the sharpie off with my (in a glove) thumb. It looked pretty clean while wet, but it dried that weird off-black color and alcohol/acetone won't clean it. I suspect the copper might have been a little vulnerable and what I did was mash the dye into the metal or something ¯(°o ° )/¯<br /><img class="why" src="./PT_clean.jpg" alt="after alcohol" /><br />
+I dunked it in isopropyl. Nothing much happened, even after scrubbing it.<br />
+I then peeled the tapes off and scrubbed the board again, this time using acetone. I forgot to take a photo here, but it'd be identical to how it looks in the photo at the top of this section. Here it is with light behind it: <br><img class="why" src="./PT_lit.jpg" alt="here it is" /><br />
+FR4 fiberglass is translucent, but the copper cladding is very opaque. Hold a board up to light and it's easy to tell that its traces are isolated.<br />
+So, my comments on this one:</p>
+    <ul>
+      <li>I shouldn't've rubbed the sharpie lines, I guess</li>
+      <li>all 3 tape types worked fine! Even the paper masking tape, although its edges are a little fuzzy</li>
+      <li>nail polish worked great but you can't mask any small details with it and cleanup is awful</li>
+      <li>paint markers are the way to go. that third line is <strong>solid</strong></li>
+      <li>writing labels with an ultra-fine sharpie is a crapshoot</li>
+      <li>you can definitely see the fingerprint</li>
+    </ul>
+    <h3 id="board-0">board 0:</h3>
+    <p>
+      <img class="why" src="./P0_clean.jpg" alt="oof" />
+      <br />
+Here it is, rinsed with alcohol.<br /><img class="why" src="./P0_lit.jpg" alt="big oof" /><br />
+Acetone-washed and held up to the light. You'll notice that, uh, well<br />
+I'm gonna have to scrape out some material in order to use this</p>
+    <p>On the bright side, nail polish is a very effective etching mask for large areas like ground planes.<br />
+I'm never using it again.</p>
+    <h3 id="board-1-the-good-one">board 1: "the good one"</h3>
+    <p>
+      <img class="why" src="./P1_etch.jpg" alt="uno" />
+      <br />
+Here it is, ferric chloride freshly rinsed off.<br /><img class="why" src="./P1_final.jpg" alt="dos" /><br />
+And here, after alcohol <em>and</em> acetone. I could have probably cleaned it enough with alcohol and elbow grease, but I was impatient.<br /><img class="why" src="./P1_lit.jpg" alt="tres" /><br />
+Held up to the light. The solid areas are a bit 'scratchy' but it should be fine. That square pad near the bottom is especially dim, but it should hold a glob of solder. Aside from the 5V trace and the ground plane, everything here is a 'landing pad', basically. Just a place to anchor a component and connect a wire/etc to it.</p>
+    <h2 id="what-ive-learned">WHAT I'VE LEARNED</h2>
+    <p>in no particular order:</p>
+    <ul>
+      <li>nail polish sucks and I hate it</li>
+      <li>basic sharpies do work as an etch resist, they're just not excellent</li>
+      <li>paint sharpies are great</li>
+      <li>if you need holes in an FR4 plate, use a drill press</li>
+      <li>I ordered the ferric chloride on amazon and then grabbed my supplies from the 'paint' section of my local department store. Turns out they sell muriatic acid there, and <a href="https://www.instructables.com/id/Stop-using-Ferric-Chloride-etchant!--A-better-etc/">you can also etch PCBs with that</a></li>
+    </ul>
+    <h2 id="what-ill-do-next">WHAT I'LL DO NEXT</h2>
+    <p>I haven't soldered any of these boards yet. Tomorrow I'll probably at least tin all the contact points on board 1 and poke it with a meter to make sure nothing's shorted. Maybe I'll just assemble the whole shebang. There's no solder mask on these boards, obviously, so once they're populated with components I intend to coat all the exposed copper with clear plastidip or something. You can buy legitimate conformal coating for circuits but lmao</p>
+    <h2 id="resources">RESOURCES</h2>
+    <p>random links lmao</p>
+    <ul>
+      <li>I followed the basics of this tutorial <a href="https://www.instructables.com/id/Making-a-Hand-Drawn-PCB./">https://www.instructables.com/id/Making-a-Hand-Drawn-PCB./</a></li>
+      <li>did I link this above? the inspiration for my weird hybrid layout <a href="https://web.archive.org/web/20080228142511/http://www.cliftonlaboratories.com/Prototyping.htm#Island_Pad_Prototyping">https://web.archive.org/web/20080228142511/http://www.cliftonlaboratories.com/Prototyping.htm#Island_Pad_Prototyping</a></li>
+      <li>more inspiration <a href="https://hackaday.com/2012/07/20/cutting-islands-into-copper-clad-pcbs-with-a-drill/">https://hackaday.com/2012/07/20/cutting-islands-into-copper-clad-pcbs-with-a-drill/</a></li>
+      <li>more conventional manhattan layouts explained <a href="http://techref.massmind.org/techref/pcb/manhattan.htm">http://techref.massmind.org/techref/pcb/manhattan.htm</a></li>
+    </ul>
+  </body>
+</html>
